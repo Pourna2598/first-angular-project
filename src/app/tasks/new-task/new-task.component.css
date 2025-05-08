@@ -1,0 +1,87 @@
+.backdrop {
+    background-color: rgba(255, 230, 236, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  dialog {
+    width: 90%;
+    max-width: 30rem;
+    background-color: #ffe4eb;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 1rem;
+    top: 5rem;
+  }
+  
+  h2 {
+    margin: 0;
+    color: #6b3953;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #a25774;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.15rem 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #d89bab;
+    background-color: #fff0f4;
+    color: #4c2f39;
+  }
+  
+  .actions {
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.25rem;
+  }
+  
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 1.25rem;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  button[type="button"] {
+    color: #a25774;
+  }
+  
+  button[type="button"]:hover,
+  button[type="button"]:active {
+    color: #6b3953;
+  }
+  
+  button[type="submit"] {
+    background-color: #f8cdd6;
+    color: #4c2f39;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="submit"]:active {
+    background-color: #f4b9c4;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (min-width: 768px) {
+    dialog {
+      padding: 2rem;
+    }
+  }
