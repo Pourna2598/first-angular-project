@@ -6,9 +6,10 @@ import { DUMMY_USERS } from './dummy-users';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, UserComponent, TasksComponent],
+  //imports: [HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  standalone: false
 })
 export class AppComponent {
   title = 'first-angular-project';
